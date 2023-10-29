@@ -8,3 +8,4 @@ vim.api.nvim_create_autocmd('InsertLeave', {
 })
 
 vim.opt.formatoptions:append { 'r' }
+vim.opt.clipboard:append { 'unnamedplus' }
