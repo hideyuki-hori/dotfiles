@@ -16,5 +16,6 @@ packer.startup(function(use)
   }
 
   use 'nvim-lualine/lualine.nvim'
+  use 'jiangmiao/auto-pairs'
 end)
 
