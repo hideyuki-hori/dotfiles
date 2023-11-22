@@ -20,3 +20,5 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+packer_compiled.lua
