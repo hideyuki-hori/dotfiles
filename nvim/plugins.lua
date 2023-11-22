@@ -8,5 +8,6 @@ if (not status) then
 end
 
 packer.startup(function(use)
+  use 'wbthomason/packer.nvim'
 end)
 
