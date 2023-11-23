@@ -17,5 +17,12 @@ packer.startup(function(use)
 
   use 'nvim-lualine/lualine.nvim'
   use 'jiangmiao/auto-pairs'
+
+  use {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  }
 end)
 
