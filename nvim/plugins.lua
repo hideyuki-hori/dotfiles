@@ -24,5 +24,12 @@ packer.startup(function(use)
     priority = 1000,
     opts = {},
   }
+
+  use {
+    'plasticboy/vim-markdown',
+    config = function()
+      vim.g.vim_markdown_new_list_item_indent = 2
+    end
+  }
 end)
 
