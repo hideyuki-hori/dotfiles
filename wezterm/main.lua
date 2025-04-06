@@ -6,4 +6,6 @@ config.color_scheme = 'Edge Dark (base16)'
 config.font = wezterm.font 'Myrica M'
 config.font_size = 16.0
 
+config.hide_tab_bar_if_only_one_tab = true
+
 return config
