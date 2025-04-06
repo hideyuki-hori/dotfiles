@@ -5,6 +5,17 @@ if [[ ":$FPATH:" != *":/Users/h-hori/.zsh/completions:"* ]]; then export FPATH="
 autoload -Uz compinit
 compinit
 
+export LAST_PWD=""
+
+function precmd {
+  if [[ "$LAST_PWD" != "$PWD" ]]; then
+    echo "\n${PWD/#$HOME/~}"
+    export LAST_PWD="$PWD"
+  fi
+}
+
+export PROMPT='🜃 '
+
 alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
