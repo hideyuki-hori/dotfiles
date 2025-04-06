@@ -4,3 +4,8 @@ if [[ ":$FPATH:" != *":/Users/h-hori/.zsh/completions:"* ]]; then export FPATH="
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
+
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gs="git status"
