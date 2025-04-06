@@ -1,0 +1,6 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/h-hori/.zsh/completions:"* ]]; then export FPATH="/Users/h-hori/.zsh/completions:$FPATH"; fi
+. "/Users/h-hori/.deno/env"
+# Initialize zsh completions (added by deno install script)
+autoload -Uz compinit
+compinit
