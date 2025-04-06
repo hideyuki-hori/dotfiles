@@ -21,21 +21,6 @@ config.keys = {
   },
   {
     key = 'w',
-    mods = 'CMD',
-    action = wezterm.action_callback(function(window, pane)
-      local tab = window:active_tab()
-      if #tab:panes() > 1 then
-        window:perform_action(
-          wezterm.action.CloseCurrentPane { confirm = false },
-          pane
-        )
-      else
-        window:toast_notification("WezTerm", "Cannot close the last pane", nil, 2000)
-      end
-    end),
-  },
-  {
-    key = 'w',
     mods = 'CMD|SHIFT',
     action = wezterm.action.CloseCurrentPane { confirm = false },
   },
