@@ -14,7 +14,7 @@ function precmd {
   fi
 }
 
-export PROMPT='🜃 '
+export PROMPT='🜃  '
 
 alias ga="git add"
 alias gc="git commit"
