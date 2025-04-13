@@ -1,0 +1,8 @@
+[window]
+opacity = 0.75
+blur = true
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Command"
+action = "ToggleFullscreen"
