@@ -20,6 +20,7 @@ alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
 alias gs="git status"
+alias gl="git log"
 alias v="nvim"
 alias cdg='cd "$(git rev-parse --show-toplevel)"'
 
