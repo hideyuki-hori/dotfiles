@@ -54,3 +54,4 @@ function git-date() {
   git rebase HEAD~1 --committer-date-is-author-date
 }
 
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
