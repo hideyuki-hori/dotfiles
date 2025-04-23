@@ -36,3 +36,21 @@ function y() {
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+function git-date() {
+  local given=$1
+  local day
+  if [[ -z "$given" ]]; then
+    day=-1
+  elif [[ "$given" -gt 0 ]]; then
+    day=$(( -1 * given ))
+  else
+    day=$given
+  fi
+
+  local date
+  date=$(date -v"${day}"d "+%a %b %d 23:32:%S %Y +0900")
+
+  GIT_EDITOR="echo" git commit --amend --date="$date" --no-edit
+  git rebase HEAD~1 --committer-date-is-author-date
+}
+
